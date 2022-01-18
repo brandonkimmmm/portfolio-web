@@ -5,9 +5,8 @@ import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Landing from '../components/Landing';
 import About from '../components/About';
-import FeaturedProjects from '../components/FeaturedProjects';
-import OtherProjects from '../components/OtherProjects';
 import Contact from '../components/Contact';
+import Projects from '../components/Projects';
 
 const IndexPage = () => {
 	const [user, setUser] = useState<User | null>(null);
@@ -36,11 +35,10 @@ const IndexPage = () => {
 			{user && projects ? (
 				<>
 					<Navbar />
-					<div className='overflow-scroll snap-y snap-mandatory h-screen'>
+					<div className='h-full px-6'>
 						<Landing user={user} />
 						<About user={user} />
-						<FeaturedProjects projects={projects.slice(0, 3)} />
-						<OtherProjects projects={projects.slice(3)} />
+						<Projects projects={projects} />
 						<Contact user={user} />
 					</div>
 				</>

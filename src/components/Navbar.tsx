@@ -20,16 +20,10 @@ const Navbar: ComponentType = () => {
 						About
 					</a>
 					<a
-						href='#Featured Projects'
+						href='#Projects'
 						className='btn btn-ghost btn-sm rounded-btn'
 					>
-						Featured Projects
-					</a>
-					<a
-						href='#Other Projects'
-						className='btn btn-ghost btn-sm rounded-btn'
-					>
-						Other Projects
+						Projects
 					</a>
 					<a
 						href='#Contact'

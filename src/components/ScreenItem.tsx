@@ -6,7 +6,7 @@ interface Props {
 
 const ScreenItem: ComponentType<Props> = ({ id, children }) => {
 	return (
-		<div id={id} className='w-full h-full p-24 snap-start'>
+		<div id={id} className='w-full h-screen p-24 snap-start'>
 			{children}
 		</div>
 	);
